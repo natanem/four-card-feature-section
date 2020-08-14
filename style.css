@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+    --red: #ea5353;
+    --cyan: #45d3d3;
+    --orange: #fcaf4a;
+    --blue: #549ef2;
+    --very-dark-blue: #4c4e61;
+    --grayish-blue: #a3a5ae;
+    --very-light-gray: #fafafa;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px
+}
+section{
+    max-width: 90rem;
+    height: 62rem;
+    margin: auto;
+}
+section div{
+    width: 33.75rem;
+    margin: 5rem auto;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: 200;
+    color: var(--very-dark-blue);
+    text-align: center;
+}
+h1 strong{
+    display: block;
+    font-weight: 400;
+    
+}
+p.lead{
+    font-size: 0.94rem;
+    text-align: center;
+}
+section.cards{
+    width: 69.4rem;
+    height: 33.125rem;;
+    margin: 1.125rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.94rem;
+    position: relative;
+}
+section.cards article.card{
+    width: 21.875rem;
+    height: 15.625rem;
+    border-radius: 10px;
+    box-shadow: 0 1rem 2rem hsla(212, 86%, 64%, 0.5);
+    /* border: 1px solid black; */
+    position: relative;
+    padding: 2rem;
+}
+article.card:nth-child(1){
+    top: 50%;
+    border-top: .25rem solid  var(--cyan);
+    background: url(./images/icon-supervisor.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
+}
+article.card:nth-child(2){
+    border-top: .25rem solid var(--red);
+    background: url(./images/icon-team-builder.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
+}
+article.card:nth-child(3){
+    top: 50%;
+    border-top: .25rem solid var(--blue);
+    background: url(./images/icon-calculator.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
+}
+article.card:nth-child(4){
+   grid-column: 2/ span 1;
+   border-top: .25rem solid var(--orange);
+   background: url(./images/icon-karma.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
+}
+
+article.card h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+article.card p{
+    font-size: 0.8125rem;
+    color: var(--grayish-blue);
+}
+
+@media screen and (max-width: 500px){
+    section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem;
+    }
+    section div{
+        width: 19.4375rem;
+    }
+    section div h1{
+        font-size: 1.5rem;
+    }
+    section div p.lead{
+        font-size: 0.9375rem;
+    }
+    section.cards{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    section.cards article.card{
+        width: 19.4375rem;
+        height: 13.875rem;
+        position: static;
+    }
+    article.card:nth-child(1){
+        background: url(./images/icon-supervisor.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 3.5625rem 3.5625rem;
+    }
+    article.card:nth-child(2){
+        background: url(./images/icon-team-builder.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 3.5625rem 3.5625rem;
+    }
+    article.card:nth-child(3){
+
+        background: url(./images/icon-calculator.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 3.5625rem 3.5625rem;
+    }
+    article.card:nth-child(4){
+       background: url(./images/icon-karma.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 3.5625rem 3.5625rem;
+    }
+}
