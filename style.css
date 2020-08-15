@@ -45,7 +45,7 @@ p.lead{
     text-align: center;
     margin-top: 1rem;
     font-weight: 400;
-    color: var(--very-dark-blue);
+    color: var(--grayish-blue);
 }
 section.cards{
     width: 69.4rem;
@@ -66,7 +66,7 @@ section.cards article.card{
     padding: 2rem;
 }
 article.card:nth-child(1){
-    top: 50%;
+    top: 8.8rem;
     border-top: .25rem solid  var(--cyan);
     background: url(./images/icon-supervisor.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
 }
@@ -75,7 +75,7 @@ article.card:nth-child(2){
     background: url(./images/icon-team-builder.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
 }
 article.card:nth-child(3){
-    top: 50%;
+    top: 8.8rem;
     border-top: .25rem solid var(--blue);
     background: url(./images/icon-calculator.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
 }
