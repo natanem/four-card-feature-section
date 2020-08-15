@@ -75,23 +75,26 @@ article.card:nth-child(2){
     background: url(./images/icon-team-builder.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
 }
 article.card:nth-child(3){
-    top: 8.8rem;
+    grid-column: 2/ span 1;
     border-top: .25rem solid var(--blue);
-    background: url(./images/icon-calculator.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
+    background: url(./images/icon-karma.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
 }
 article.card:nth-child(4){
-   grid-column: 2/ span 1;
+    top: -8.8rem;
+   grid-column: 3/ span 1;
    border-top: .25rem solid var(--orange);
-   background: url(./images/icon-karma.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
+   background: url(./images/icon-calculator.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
 }
 
 article.card h3{
     font-size: 1.25rem;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 article.card p{
     font-size: 0.8125rem;
     color: var(--grayish-blue);
+    margin: 0;
 }
 
 @media screen and (max-width: 500px){
