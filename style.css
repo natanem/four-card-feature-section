@@ -76,13 +76,13 @@ article.card:nth-child(2){
 }
 article.card:nth-child(3){
     grid-column: 2/ span 1;
-    border-top: .25rem solid var(--blue);
+    border-top: .25rem solid var(--orange);
     background: url(./images/icon-karma.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
 }
 article.card:nth-child(4){
     top: -8.8rem;
    grid-column: 3/ span 1;
-   border-top: .25rem solid var(--orange);
+   border-top: .25rem solid var(--blue);
    background: url(./images/icon-calculator.svg) no-repeat calc(100% - 2rem) calc(100% - 2rem)/ 4rem 4rem;
 }
 
